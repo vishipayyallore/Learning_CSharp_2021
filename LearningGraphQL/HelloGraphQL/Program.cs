@@ -13,6 +13,19 @@ namespace HelloGraphQL
         {
             ForegroundColor = ConsoleColor.Green;
 
+            var nameSchema = Schema.For(@"
+                type Query {
+                    name: String
+                }
+            ");
+
+            var nameOutput = nameSchema.Execute(_ =>
+            {
+                _.Query = "{ name }";
+                _.Root = new { Name = "Shiva Sai" };
+            });
+            WriteLine($"Name Details: {nameOutput}");
+
             var schema = Schema.For(@"
                 type Person {
                     name: String,
@@ -30,7 +43,7 @@ namespace HelloGraphQL
                 _.Root = new { Person = new { Name = "Shiva", Age = "25" } };
             });
 
-            WriteLine($"{personDetails}");
+            WriteLine($"Person Details: {personDetails}");
 
             WriteLine("\n\nPress any key ...");
             ReadKey();
