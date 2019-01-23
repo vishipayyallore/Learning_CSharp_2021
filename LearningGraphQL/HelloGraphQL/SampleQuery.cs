@@ -16,7 +16,7 @@ namespace HelloGraphQL
         {
             var nameSchema = Schema.For(@"
                 type Query {
-                    name: String
+                    name: String!
                 }
             ");
 
@@ -33,8 +33,8 @@ namespace HelloGraphQL
         {
             var schema = Schema.For(@"
                 type Person {
-                    name: String,
-                    age: String
+                    name: String!,
+                    age: String!
                 }
 
                 type Query{
