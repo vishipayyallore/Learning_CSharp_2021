@@ -6,7 +6,7 @@ namespace CodeFristDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Code First Graph QL!");
         }
     }
 }

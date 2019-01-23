@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/LearningGraphQL/HelloGraphQL/HelloGraphQL.csproj"
+                "${workspaceFolder}/LearningGraphQL"
             ],
             "problemMatcher": "$msCompile"
         }
