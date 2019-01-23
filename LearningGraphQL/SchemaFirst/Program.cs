@@ -19,7 +19,8 @@ namespace SchemaFirst
                 type Query{
                     employee: Person
                 }
-            ", _ => {
+            ", _ =>
+            {
                 _.Types.Include<Query>();
             });
 
