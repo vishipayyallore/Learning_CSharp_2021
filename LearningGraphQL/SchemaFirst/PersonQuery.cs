@@ -3,7 +3,7 @@ using GraphQL;
 namespace SchemaFirst
 {
 
-    public class Query
+    public class PersonQuery
     {
 
         [GraphQLMetadata("employee")]

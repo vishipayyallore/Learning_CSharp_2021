@@ -16,17 +16,17 @@ namespace SchemaFirst
                     name: String!
                 }
 
-                type Query{
+                type PersonQuery {
                     employee: Person
                 }
             ", _ =>
             {
-                _.Types.Include<Query>();
+                _.Types.Include<PersonQuery>();
             });
 
             var personDetails = schema.Execute(_ =>
             {
-                _.Query = "{ employee { id, name } }";
+                _.PersonQuery = "{ employee { id, name } }";
             });
 
             Console.WriteLine($"Employee: {personDetails}");
