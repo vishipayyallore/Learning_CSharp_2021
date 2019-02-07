@@ -12,9 +12,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A2A23B37-78F4-4B87-BE37-7D552FD27010}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.TuplesDemo", "Source\Learn.TuplesDemo\Learn.TuplesDemo.csproj", "{D6B371B9-5800-4336-B572-B04510276050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.CSharp7", "Source\Learn.CSharp7\Learn.CSharp7.csproj", "{A7C44290-8ACC-461D-9A4F-7BA84321290A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6B371B9-5800-4336-B572-B04510276050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B371B9-5800-4336-B572-B04510276050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B371B9-5800-4336-B572-B04510276050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B371B9-5800-4336-B572-B04510276050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C44290-8ACC-461D-9A4F-7BA84321290A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C44290-8ACC-461D-9A4F-7BA84321290A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C44290-8ACC-461D-9A4F-7BA84321290A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C44290-8ACC-461D-9A4F-7BA84321290A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6B371B9-5800-4336-B572-B04510276050} = {ABF7F208-AF88-4E02-A679-5EDF2DBB9F17}
+		{A7C44290-8ACC-461D-9A4F-7BA84321290A} = {ABF7F208-AF88-4E02-A679-5EDF2DBB9F17}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1068B9BC-DC9C-4090-8C56-0DF32B193169}
