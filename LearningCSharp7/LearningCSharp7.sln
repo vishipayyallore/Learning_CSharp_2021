@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{ABF7F208-AF88-4E02-A679-5EDF2DBB9F17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{A88CFA5D-F983-4E02-B3B9-FF92AD7FD480}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\ReadMe.md = Documentation\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A2A23B37-78F4-4B87-BE37-7D552FD27010}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1068B9BC-DC9C-4090-8C56-0DF32B193169}
+	EndGlobalSection
+EndGlobal
