@@ -7,9 +7,9 @@ namespace Learn.TuplesDemo
     public class DemoTuples : IDemoDataType
     {
 
-        public void ShowDemo()
+        public void ShowDemo(ConsoleColor foreGroundColor)
         {
-            ForegroundColor = ConsoleColor.DarkCyan;
+            ForegroundColor = foreGroundColor;
 
             // Simple Demo
             var fullName = ("Shiva", "Sai");

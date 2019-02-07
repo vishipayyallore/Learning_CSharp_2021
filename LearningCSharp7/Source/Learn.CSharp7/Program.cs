@@ -8,14 +8,8 @@ namespace Learn.CSharp7
     {
         static void Main(string[] args)
         {
-            
-
-            //(string First, string Last) = ("Shiva", "Sai");
-
-            //WriteLine($"Full Name: {First} {Last}");
-
             var demoTuples = new DemoTuples();
-            demoTuples.ShowDemo();
+            demoTuples.ShowDemo(ConsoleColor.DarkCyan);
 
             ForegroundColor = ConsoleColor.White;
 
