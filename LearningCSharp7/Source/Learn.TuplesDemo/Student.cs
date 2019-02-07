@@ -2,7 +2,7 @@
 
 namespace Learn.TuplesDemo
 {
-    public class Class1
+    public class Student
     {
     }
 }

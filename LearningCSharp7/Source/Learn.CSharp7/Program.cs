@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learn.TuplesDemo;
+using System;
 using static System.Console;
 
 namespace Learn.CSharp7
@@ -7,11 +8,16 @@ namespace Learn.CSharp7
     {
         static void Main(string[] args)
         {
-            ForegroundColor = ConsoleColor.DarkCyan;
+            
 
-            var fullName = (First: "Shiva", Last: "Sai");
+            //(string First, string Last) = ("Shiva", "Sai");
 
-            WriteLine($"Full Name: {fullName.First} {fullName.Last}");
+            //WriteLine($"Full Name: {First} {Last}");
+
+            var demoTuples = new DemoTuples();
+            demoTuples.ShowDemo();
+
+            ForegroundColor = ConsoleColor.White;
 
             WriteLine("\n\nPress any key ...");
             ReadKey();
