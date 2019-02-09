@@ -12,4 +12,9 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Learn.CSharp7.Common\Learn.CSharp7.Common.csproj" />
+    <ProjectReference Include="..\..\Source\Learn.TuplesDemo\Learn.TuplesDemo.csproj" />
+  </ItemGroup>
+
 </Project>
