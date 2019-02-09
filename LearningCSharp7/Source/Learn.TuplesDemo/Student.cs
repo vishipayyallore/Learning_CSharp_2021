@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Learn.TuplesDemo
 {
@@ -20,6 +21,16 @@ namespace Learn.TuplesDemo
         public int Age { get; }
 
         public float Salary { get; set; }
+
+        public List<Subject> Subjects { get; set; }
+    }
+
+
+    public struct Subject
+    {
+        public string Name { get; set; }
+
+        public decimal Marks { get; set; }
     }
 
 }
