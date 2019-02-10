@@ -21,6 +21,7 @@ namespace Learn.TuplesDemo
             (string, string) fullName1 = ("Shiva", "Sai");
             WriteLine($"Full Name: {fullName1.Item1} {fullName1.Item2}");
 
+            // Names to Tuple Literals
             var fullName2 = (First: "Shiva", Last: "Sai");
             WriteLine($"Full Name: {fullName2.First} {fullName2.Last}");
 
@@ -28,7 +29,11 @@ namespace Learn.TuplesDemo
             (string First, string Last) fullName3 = GetFullName3();
             WriteLine($"Full Name: {fullName3.First} {fullName3.Last}");
 
-            // Deconstruction
+            var fullName4 = (First: "Shiva", Last: "Sai");
+            (string FName, string LName) = fullName4;
+            WriteLine($"Full Name: {FName} {LName}");
+
+            // Deconstruction OR Splitting the Tuple
             var (First, Last) = ("Shiva", "Sai");
             WriteLine($"Full Name: {First} {Last}");
 

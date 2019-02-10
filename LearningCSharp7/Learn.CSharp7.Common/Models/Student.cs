@@ -25,6 +25,20 @@ namespace Learn.CSharp7.Common.Models
         public float Salary { get; set; }
 
         public List<Subject> Subjects { get; set; }
+
+        /// <summary>
+        /// deconstruction using Deconstruct method
+        /// </summary>
+        /// <param name="fullName"></param>
+        /// <param name="age"></param>
+        /// <param name="salary"></param>
+        public void Deconstruct(out string fullName, out int age, out float salary)
+        {
+            fullName = $"{First} {Last}";
+            age = Age;
+            salary = Salary;
+        }
+
     }
 
 }
