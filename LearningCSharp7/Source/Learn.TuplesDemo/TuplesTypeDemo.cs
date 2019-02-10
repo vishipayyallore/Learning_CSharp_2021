@@ -15,7 +15,7 @@ namespace Learn.TuplesDemo
             ForegroundColor = foreGroundColor;
 
             // Tuple Literal
-            var fullName = ("Shiva", "Sai");    
+            var fullName = ("Shiva", "Sai");
             WriteLine($"Full Name: {fullName.Item1} {fullName.Item2}");
 
             (string, string) fullName1 = ("Shiva", "Sai");
