@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Learn.MiscDemo\Learn.MiscDemo.csproj" />
     <ProjectReference Include="..\Learn.TuplesDemo\Learn.TuplesDemo.csproj" />
   </ItemGroup>
 

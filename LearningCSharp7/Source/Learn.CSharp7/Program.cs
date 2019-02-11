@@ -1,4 +1,5 @@
-﻿using Learn.TuplesDemo;
+﻿using Learn.MiscDemo;
+using Learn.TuplesDemo;
 using System;
 using static System.Console;
 
@@ -10,6 +11,9 @@ namespace Learn.CSharp7
         {
             var demoTuples = new DemoTuples();
             demoTuples.ShowDemo(ConsoleColor.DarkCyan);
+
+            var genericTryParseDemo = new GenericTryParseDemo();
+            genericTryParseDemo.ShowDemo(ConsoleColor.Green);
 
             ForegroundColor = ConsoleColor.White;
 

@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Learn.CSharp7.Common\Learn.CSharp7.Common.csproj" />
+  </ItemGroup>
+
 </Project>
