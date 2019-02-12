@@ -15,5 +15,11 @@ namespace Learn.TuplesDemoTests
             tupleDataTypeDemo.ShowDemo(System.ConsoleColor.Green);
         }
 
+        [TestMethod]
+        public void MyTestMethod()
+        {
+
+        }
+
     }
 }
