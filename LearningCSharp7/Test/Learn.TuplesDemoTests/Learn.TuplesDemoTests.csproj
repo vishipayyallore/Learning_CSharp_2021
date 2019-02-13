@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Learn.CSharp7.Common\Learn.CSharp7.Common.csproj" />
+    <ProjectReference Include="..\..\Source\Learn.CSharp7.Common\Learn.CSharp7.Common.csproj" />
     <ProjectReference Include="..\..\Source\Learn.TuplesDemo\Learn.TuplesDemo.csproj" />
   </ItemGroup>
 
