@@ -15,8 +15,8 @@ namespace Learn.MiscDemo
             TryParseV1(input1);
             TryParseV2(input1);
 
+            // Changing to Non-Numeric value
             input1 = "ABC";
-
             TryParseV1(input1);
             TryParseV2(input1);
         }
