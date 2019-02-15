@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Learn.PatternMatchingDemo
+﻿namespace Learn.PatternMatchingDemo
 {
-    class SwitchPatternDemo
+
+    public class SwitchPatternDemo
     {
     }
+
 }

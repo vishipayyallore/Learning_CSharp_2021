@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace Learn.PatternMatchingDemo
+﻿namespace Learn.PatternMatchingDemo
 {
+
     public class ConstPatternDemo
     {
     }
+
 }
