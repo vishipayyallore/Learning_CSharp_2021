@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace Learn.TuplesDemo
 {
-    public class DemoTuples : IDemoDataType
+    public class DemoTuples : IDataTypeDemo
     {
         /// <summary>
         /// Tuples Type and Tuples Literal: Returning multiple values from methods. Tuples are ValueType/Structs

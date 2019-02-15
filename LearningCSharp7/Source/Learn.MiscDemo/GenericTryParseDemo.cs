@@ -6,7 +6,7 @@ using static System.Console;
 namespace Learn.MiscDemo
 {
 
-    public class GenericTryParseDemo : IDemoDataType
+    public class GenericTryParseDemo : IDataTypeDemo
     {
 
         public void ShowDemo(ConsoleColor foreGroundColor)

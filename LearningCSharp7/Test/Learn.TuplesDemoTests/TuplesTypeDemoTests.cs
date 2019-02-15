@@ -10,7 +10,7 @@ namespace Learn.TuplesDemoTests
         [TestMethod]
         public void TestMethod1()
         {
-            IDemoDataType tupleDataTypeDemo = new DemoTuples();
+            IDataTypeDemo tupleDataTypeDemo = new DemoTuples();
 
             tupleDataTypeDemo.ShowDemo(System.ConsoleColor.Green);
         }

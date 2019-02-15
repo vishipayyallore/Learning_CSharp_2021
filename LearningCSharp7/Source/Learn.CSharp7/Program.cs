@@ -15,6 +15,9 @@ namespace Learn.CSharp7
             var genericTryParseDemo = new GenericTryParseDemo();
             genericTryParseDemo.ShowDemo(ConsoleColor.Green);
 
+            var outvariableDemo = new OutVariableDemo();
+            outvariableDemo.ShowDemo(ConsoleColor.Magenta);
+
             ForegroundColor = ConsoleColor.White;
 
             WriteLine("\n\nPress any key ...");

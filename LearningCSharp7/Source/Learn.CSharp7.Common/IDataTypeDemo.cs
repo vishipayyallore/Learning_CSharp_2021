@@ -3,7 +3,7 @@
 namespace Learn.CSharp7.Common
 {
 
-    public interface IDemoDataType
+    public interface IDataTypeDemo
     {
         void ShowDemo(ConsoleColor foreGroundColor);
     }
