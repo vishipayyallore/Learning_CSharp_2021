@@ -6,12 +6,12 @@ namespace Learn.MiscDemo
 {
     public class OutVariableDemo : IDataTypeDemo
     {
+
         public void ShowDemo(ConsoleColor foreGroundColor)
         {
             ForegroundColor = foreGroundColor;
 
             var input1 = "12345";
-
             TryParseV1(input1);
             TryParseV2(input1);
 
@@ -20,7 +20,6 @@ namespace Learn.MiscDemo
             TryParseV1(input1);
             TryParseV2(input1);
         }
-
 
         private void TryParseV1(string input)
         {
