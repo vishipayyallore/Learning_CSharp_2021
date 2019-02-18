@@ -18,6 +18,9 @@ namespace Learn.CSharp7
             var outvariableDemo = new OutVariableDemo();
             outvariableDemo.ShowDemo(ConsoleColor.Magenta);
 
+            var discardsDemo = new DiscardsDemo();
+            discardsDemo.ShowDemo(ConsoleColor.Cyan);
+
             ForegroundColor = ConsoleColor.White;
 
             WriteLine("\n\nPress any key ...");
