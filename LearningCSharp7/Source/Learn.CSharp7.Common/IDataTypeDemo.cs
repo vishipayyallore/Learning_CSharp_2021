@@ -3,7 +3,7 @@
 
     public interface IDataTypeDemo
     {
-        string Title { get;  }
+        string Title { get; }
 
         void ShowDemo();
     }

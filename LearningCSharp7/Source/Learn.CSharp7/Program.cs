@@ -1,5 +1,4 @@
-﻿using Learn.CSharp7.Common;
-using Learn.MiscDemo;
+﻿using Learn.MiscDemo;
 using Learn.TuplesDemo;
 using System;
 using static System.Console;
@@ -10,30 +9,17 @@ namespace Learn.CSharp7
     {
         static void Main(string[] args)
         {
+            var demoHelper = new DemoHelper();
 
-            ShowDemoOf(new DemoTuples(), ConsoleColor.DarkCyan);
-
-            ShowDemoOf(new GenericTryParseDemo(), ConsoleColor.Green);
-
-            ShowDemoOf(new OutVariableDemo(), ConsoleColor.Magenta);
-
-            ShowDemoOf(new DiscardsDemo(), ConsoleColor.Cyan);
+            demoHelper.ShowDemoOf(new DemoTuples(), ConsoleColor.DarkCyan)
+                .ShowDemoOf(new GenericTryParseDemo(), ConsoleColor.Green)
+                .ShowDemoOf(new OutVariableDemo(), ConsoleColor.Magenta)
+                .ShowDemoOf(new DiscardsDemo(), ConsoleColor.Cyan);
 
             ForegroundColor = ConsoleColor.White;
 
             WriteLine("\n\nPress any key ...");
             ReadKey();
-        }
-
-        private static void ShowDemoOf(IDataTypeDemo dataTypeDemo, ConsoleColor foreGroundColor)
-        {
-            ForegroundColor = foreGroundColor;
-
-            WriteLine($"==================== {dataTypeDemo.Title} ====================");
-
-            dataTypeDemo.ShowDemo();
-
-            WriteLine($"-------------------- {dataTypeDemo.Title} --------------------\n\n");
         }
 
     }
