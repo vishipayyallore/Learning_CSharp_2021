@@ -25,12 +25,4 @@ namespace Learn.TuplesDemo
         public List<Subject> Subjects { get; set; }
     }
 
-
-    public struct Subject
-    {
-        public string Name { get; set; }
-
-        public decimal Marks { get; set; }
-    }
-
 }

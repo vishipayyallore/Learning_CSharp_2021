@@ -8,11 +8,11 @@ namespace Learn.TuplesDemoTests
     public class TuplesTypeDemoTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void When_ShowDemo_Of_DemoTuples_Called()
         {
             IDataTypeDemo tupleDataTypeDemo = new DemoTuples();
 
-            tupleDataTypeDemo.ShowDemo(System.ConsoleColor.Green);
+            tupleDataTypeDemo.ShowDemo();
         }
 
     }
