@@ -6,13 +6,16 @@ namespace Learn.TuplesDemo
 {
     public class DemoTuples : IDataTypeDemo
     {
+
+        public string Title => this.GetType().Name;
+
         /// <summary>
         /// Tuples Type and Tuples Literal: Returning multiple values from methods. Tuples are ValueType/Structs
         /// </summary>
         /// <param name="foreGroundColor"></param>
         public void ShowDemo(ConsoleColor foreGroundColor)
         {
-            ForegroundColor = foreGroundColor;
+            
 
             // Tuple Literal
             var fullName = ("Shiva", "Sai");
