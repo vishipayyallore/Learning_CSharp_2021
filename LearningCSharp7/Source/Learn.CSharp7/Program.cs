@@ -13,17 +13,11 @@ namespace Learn.CSharp7
 
             ShowDemoOf(new DemoTuples(), ConsoleColor.DarkCyan);
 
-            // var demoTuples = new DemoTuples();
-            // demoTuples.ShowDemo(ConsoleColor.DarkCyan);
+            ShowDemoOf(new GenericTryParseDemo(), ConsoleColor.Green);
 
-            var genericTryParseDemo = new GenericTryParseDemo();
-            genericTryParseDemo.ShowDemo(ConsoleColor.Green);
+            ShowDemoOf(new OutVariableDemo(), ConsoleColor.Magenta);
 
-            var outvariableDemo = new OutVariableDemo();
-            outvariableDemo.ShowDemo(ConsoleColor.Magenta);
-
-            var discardsDemo = new DiscardsDemo();
-            discardsDemo.ShowDemo(ConsoleColor.Cyan);
+            ShowDemoOf(new DiscardsDemo(), ConsoleColor.Cyan);
 
             ForegroundColor = ConsoleColor.White;
 
@@ -37,9 +31,9 @@ namespace Learn.CSharp7
 
             WriteLine($"==================== {dataTypeDemo.Title} ====================");
 
-            WriteLine($"-------------------- {dataTypeDemo.Title} --------------------");
+            dataTypeDemo.ShowDemo();
 
-            ForegroundColor = ConsoleColor.White;
+            WriteLine($"-------------------- {dataTypeDemo.Title} --------------------\n\n");
         }
 
     }

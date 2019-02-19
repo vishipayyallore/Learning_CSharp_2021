@@ -8,11 +8,10 @@ namespace Learn.MiscDemo
 
     public class GenericTryParseDemo : IDataTypeDemo
     {
+        public string Title => GetType().Name;
 
-        public void ShowDemo(ConsoleColor foreGroundColor)
+        public void ShowDemo()
         {
-            ForegroundColor = foreGroundColor;
-
             var genericTryParse = new GenericTryParse();
             int getNumber = 0;
             genericTryParse.TryParse("2468", ref getNumber);

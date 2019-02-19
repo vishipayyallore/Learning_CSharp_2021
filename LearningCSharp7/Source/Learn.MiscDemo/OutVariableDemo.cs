@@ -1,16 +1,14 @@
 ﻿using Learn.CSharp7.Common;
 using System;
-using static System.Console;
 
 namespace Learn.MiscDemo
 {
     public class OutVariableDemo : IDataTypeDemo
     {
+        public string Title => GetType().Name;
 
-        public void ShowDemo(ConsoleColor foreGroundColor)
+        public void ShowDemo()
         {
-            ForegroundColor = foreGroundColor;
-
             var input1 = "12345";
             TryParseV1(input1);
             TryParseV2(input1);

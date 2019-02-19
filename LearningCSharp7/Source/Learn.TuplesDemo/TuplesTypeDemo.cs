@@ -1,5 +1,4 @@
 ﻿using Learn.CSharp7.Common;
-using System;
 using static System.Console;
 
 namespace Learn.TuplesDemo
@@ -13,10 +12,8 @@ namespace Learn.TuplesDemo
         /// Tuples Type and Tuples Literal: Returning multiple values from methods. Tuples are ValueType/Structs
         /// </summary>
         /// <param name="foreGroundColor"></param>
-        public void ShowDemo(ConsoleColor foreGroundColor)
+        public void ShowDemo()
         {
-            
-
             // Tuple Literal
             var fullName = ("Shiva", "Sai");
             WriteLine($"Full Name: {fullName.Item1} {fullName.Item2}");
@@ -43,7 +40,6 @@ namespace Learn.TuplesDemo
             // Tuple Type
             (string First, string Last) fullNameN = ("Manish", "Aggarwal");
             WriteLine($"Full Name: {fullNameN.First} {fullNameN.Last}");
-
         }
 
         /// <summary>

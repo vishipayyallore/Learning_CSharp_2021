@@ -1,13 +1,11 @@
-﻿using System;
-
-namespace Learn.CSharp7.Common
+﻿namespace Learn.CSharp7.Common
 {
 
     public interface IDataTypeDemo
     {
         string Title { get;  }
 
-        void ShowDemo(ConsoleColor foreGroundColor);
+        void ShowDemo();
     }
 
 }
