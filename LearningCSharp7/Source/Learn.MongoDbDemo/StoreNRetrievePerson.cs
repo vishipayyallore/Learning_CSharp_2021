@@ -1,4 +1,5 @@
 ﻿using MongoDB.Driver;
+using System;
 
 namespace Learn.MongoDbDemo
 {
@@ -12,7 +13,7 @@ namespace Learn.MongoDbDemo
             var dataBase = mongoDbClient.GetDatabase("test");
             var persons = dataBase.GetCollection<Person>("persons");
 
-            var person1 = new Person { Id = 125, Age = 24, FirstName = "Alex", LastName = "Pandian" };
+            var person1 = new Person { Age = 24, FirstName = "Alex", LastName = "Pandian" };
 
             persons.InsertOne(person1);
 
@@ -22,7 +23,7 @@ namespace Learn.MongoDbDemo
 
     public class Person
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         public string FirstName { get; set; }
 
