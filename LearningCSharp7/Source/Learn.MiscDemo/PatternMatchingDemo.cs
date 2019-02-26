@@ -15,10 +15,11 @@ namespace Learn.MiscDemo
             var employee = new Employee { Id = "E101", Name = "Anil", TaskCodes = new List<int> { 101, 102, 103, 104 } };
             DisplayInformation(employee);
 
-            // is expression pattern matching
+            var manager = new Manager { Id = "M101", Name = "Ashish", Repotees = new List<string> { "Jagan", "Abhishek", "Swamy" } };
+            DisplayInformation(manager);
         }
 
-
+        // is expression pattern matching
         private void DisplayInformation(object person)
         {
             if (person is Employee employee)
