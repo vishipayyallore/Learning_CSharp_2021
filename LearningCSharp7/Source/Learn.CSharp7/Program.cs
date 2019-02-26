@@ -20,7 +20,8 @@ namespace Learn.CSharp7
             demoHelper.ShowDemoOf(new DemoTuples(), ConsoleColor.DarkCyan)
                 .ShowDemoOf(new GenericTryParseDemo(), ConsoleColor.Green)
                 .ShowDemoOf(new OutVariableDemo(), ConsoleColor.Magenta)
-                .ShowDemoOf(new DiscardsDemo(), ConsoleColor.Cyan);
+                .ShowDemoOf(new DiscardsDemo(), ConsoleColor.Cyan)
+                .ShowDemoOf(new PatternMatchingDemo(), ConsoleColor.Red);
 
             ForegroundColor = ConsoleColor.White;
 

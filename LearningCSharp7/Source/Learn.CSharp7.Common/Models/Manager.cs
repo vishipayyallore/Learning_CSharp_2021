@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Learn.CSharp7.Common.Models
 {
-    class Manager
+    public class Manager
     {
+        public string Id { get; set; }
+
+        public string Name { get; set; }
+
+        public List<string> Repotees { get; set; }
     }
+
 }
