@@ -1,6 +1,5 @@
 ﻿using Learn.CSharp7.Common;
 using Learn.CSharp7.Common.Models;
-using System.Collections.Generic;
 using static System.Console;
 
 namespace Learn.MiscDemo
@@ -11,8 +10,8 @@ namespace Learn.MiscDemo
 
         public void ShowDemo()
         {
-            var employee = new Employee { Id = "E101", Name = "Anil", TaskCodes = new List<int> { 101, 102, 103, 104 } };
-            var manager = new Manager { Id = "M101", Name = "Ashish", Repotees = new List<string> { "Jagan", "Abhishek", "Swamy" } };
+            var employee = new Employee { Id = "E101", Name = "Anil", TaskCodes = { 101, 102, 103, 104 } };
+            var manager = new Manager { Id = "M101", Name = "Ashish", Repotees = { "Jagan", "Abhishek", "Swamy" } };
 
             DisplayInformation(employee);
             DisplayInformation(manager);
