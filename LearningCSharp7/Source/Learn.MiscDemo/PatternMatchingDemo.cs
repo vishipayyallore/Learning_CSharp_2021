@@ -12,10 +12,14 @@ namespace Learn.MiscDemo
         public void ShowDemo()
         {
             var employee = new Employee { Id = "E101", Name = "Anil", TaskCodes = new List<int> { 101, 102, 103, 104 } };
-            DisplayInformation(employee);
-
             var manager = new Manager { Id = "M101", Name = "Ashish", Repotees = new List<string> { "Jagan", "Abhishek", "Swamy" } };
+
+            DisplayInformation(employee);
             DisplayInformation(manager);
+
+            DisplayInformationUsingSwitch(employee);
+            DisplayInformationUsingSwitch(manager);
+            DisplayInformationUsingSwitch(null);
         }
 
         // is expression pattern matching
@@ -42,6 +46,7 @@ namespace Learn.MiscDemo
                     WriteLine($"Id= {manager.Id}, Name= {manager.Name}, Repotees= {string.Join<string>(", ", manager.Repotees)} ");
                     break;
                 default:
+                    WriteLine($"Unable to determine the Object {nameof(person)}");
                     break;
             }
         }
