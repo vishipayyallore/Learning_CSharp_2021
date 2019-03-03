@@ -19,6 +19,10 @@ namespace Learn.MiscDemo
             DisplayInformationUsingSwitch(employee);
             DisplayInformationUsingSwitch(manager);
             DisplayInformationUsingSwitch(null);
+
+            // Using Deconstruction
+            var (id, name) = employee;
+            WriteLine($"Employee Deconstruction Id= {id}, Name= {name} ");
         }
 
         // is expression pattern matching
