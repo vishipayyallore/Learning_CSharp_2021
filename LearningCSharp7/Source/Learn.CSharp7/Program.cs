@@ -1,4 +1,5 @@
-﻿using Learn.MiscDemo;
+﻿using Learn.CSharp7.Common.Utilis;
+using Learn.MiscDemo;
 using Learn.MongoDbDemo;
 using Learn.TuplesDemo;
 using System;
@@ -10,6 +11,20 @@ namespace Learn.CSharp7
     {
         static void Main(string[] args)
         {
+
+            // ---------------------------- For Quick Experiments -----------------------------------------
+            string input = "125";
+            var (value, parsed) = input.ParseToInteger();
+            WriteLine($"Integer Try Parse Using Extension Method: {input} = {value}");
+
+            input = "125.45";
+            (value, parsed) = input.ParseToInteger();
+            WriteLine($"Integer Try Parse Using Extension Method: {input} = {value}");
+
+            input = "ABC";
+            (value, parsed) = input.ParseToInteger();
+            WriteLine($"Integer Try Parse Using Extension Method: {input} = {value}");
+
             // ---------------------------------------------------------------------
             var mongoDemos = new StoreNRetrievePerson();
             mongoDemos.SavePerson();
