@@ -17,6 +17,13 @@ namespace Learn.CSharp7.Common.Models
         public string Name { get; set; }
 
         public List<string> Repotees { get; set; }
+
+        public void Deconstruct(out string id, out string name)
+        {
+            id = Id;
+            name = Name;
+        }
+
     }
 
 }

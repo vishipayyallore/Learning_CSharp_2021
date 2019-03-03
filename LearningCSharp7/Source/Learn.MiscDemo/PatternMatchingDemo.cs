@@ -15,6 +15,7 @@ namespace Learn.MiscDemo
 
             DisplayInformation(employee);
             DisplayInformation(manager);
+            DisplayInformation(null);
 
             DisplayInformationUsingSwitch(employee);
             DisplayInformationUsingSwitch(manager);
@@ -36,6 +37,10 @@ namespace Learn.MiscDemo
             {
                 WriteLine($"Id= {manager.Id}, Name= {manager.Name}, Repotees= {string.Join<string>(", ", manager.Repotees)} ");
             }
+            if (person is null)
+            {
+                WriteLine($"Object {nameof(person)} is null");
+            }
         }
 
         private void DisplayInformationUsingSwitch(object person)
@@ -47,6 +52,9 @@ namespace Learn.MiscDemo
                     break;
                 case Manager manager:
                     WriteLine($"Id= {manager.Id}, Name= {manager.Name}, Repotees= {string.Join<string>(", ", manager.Repotees)} ");
+                    break;
+                case null:
+                    WriteLine($"Object {nameof(person)} is null");
                     break;
                 default:
                     WriteLine($"Unable to determine the Object {nameof(person)}");
