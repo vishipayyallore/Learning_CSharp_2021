@@ -24,6 +24,9 @@ namespace Learn.MiscDemo
             // Using Deconstruction
             var (id, name) = employee;
             WriteLine($"Employee Deconstruction Id= {id}, Name= {name} ");
+
+            (id, name) = manager;
+            WriteLine($"Manager Deconstruction Id= {id}, Name= {name} ");
         }
 
         // is expression pattern matching
