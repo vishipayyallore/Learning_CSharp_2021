@@ -15,11 +15,11 @@ namespace Learn.CSharp7.Common.Models
 
         public List<int> TaskCodes { get; set; }
 
-        public void Deconstruct(out string id, out string name)
-        {
-            id = Id;
-            name = Name;
-        }
+        //public void Deconstruct(out string id, out string name)
+        //{
+        //    id = Id;
+        //    name = Name;
+        //}
 
     }
 
