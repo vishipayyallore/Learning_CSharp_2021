@@ -25,6 +25,10 @@ namespace Learn.CSharp7
             (value, parsed) = input.ParseToInteger();
             WriteLine($"Integer Try Parse Using Extension Method: {input} = {value}");
 
+            // Out Variable Demo
+            int.TryParse(input, out int outputNumber);
+            WriteLine($"Out Variable Demo : {input} = {outputNumber}");
+
             // ---------------------------------------------------------------------
             var mongoDemos = new StoreNRetrievePerson();
             mongoDemos.SavePerson();
