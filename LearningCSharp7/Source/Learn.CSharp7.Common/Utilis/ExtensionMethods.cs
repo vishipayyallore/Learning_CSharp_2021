@@ -26,6 +26,13 @@ namespace Learn.CSharp7.Common.Utilis
             name = employee.Name;
         }
 
+        public static void Deconstruct(this Student student, out string fullName, out int age, out float salary)
+        {
+            fullName = $"{student.First} {student.Last}";
+            age = student.Age;
+            salary = student.Salary;
+        }
+
     }
 
 }
