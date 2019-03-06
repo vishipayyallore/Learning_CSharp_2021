@@ -9,6 +9,7 @@ namespace Learn.CSharp7.Common.Models
 
         public Student()
         {
+            Subjects = new List<Subject>();
         }
 
         public int Id { get; set; }
@@ -24,7 +25,6 @@ namespace Learn.CSharp7.Common.Models
         public float Salary { get; set; }
 
         public List<Subject> Subjects { get; set; }
-
 
     }
 

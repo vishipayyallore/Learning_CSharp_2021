@@ -2,7 +2,10 @@
 using Learn.MongoDbDemo;
 using Learn.TuplesDemo;
 using System;
+using System.Collections.Generic;
 using static System.Console;
+using Learn.CSharp7.Common.Utilis;
+using Learn.CSharp7.Common.Models;
 
 namespace Learn.CSharp7
 {
@@ -12,6 +15,19 @@ namespace Learn.CSharp7
         {
 
             // ---------------------------- For Quick Experiments -----------------------------------------
+            var student = new Common.Models.Student()
+            {
+                Id = 101,
+                First = "Shiva",
+                Last = "Sai",
+                DateOfBirth = DateTime.Now.AddYears(-25),
+                Salary = 123.45f,
+                Subjects = new List<Common.Models.Subject> { new Common.Models.Subject { Name = "Computers", Marks = 78.89f } }
+            };
+
+            // Student Deconstruction
+            var (fullName, age, salary) = student;
+
             var mongoDemos = new StoreNRetrievePerson();
             mongoDemos.SavePerson();
 
