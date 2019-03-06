@@ -1,11 +1,10 @@
-﻿using Learn.MiscDemo;
+﻿using Learn.CSharp7.Common.Utilis;
+using Learn.MiscDemo;
 using Learn.MongoDbDemo;
 using Learn.TuplesDemo;
 using System;
 using System.Collections.Generic;
 using static System.Console;
-using Learn.CSharp7.Common.Utilis;
-using Learn.CSharp7.Common.Models;
 
 namespace Learn.CSharp7
 {
@@ -27,6 +26,10 @@ namespace Learn.CSharp7
 
             // Student Deconstruction
             var (fullName, age, salary) = student;
+            WriteLine($"Student Deconstruction: {fullName} {age} {salary}");
+
+            var (name, marks) = student.Subjects[0];
+            WriteLine($"Subject Deconstruction: {name} {marks}");
 
             var mongoDemos = new StoreNRetrievePerson();
             mongoDemos.SavePerson();

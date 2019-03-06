@@ -5,7 +5,7 @@
     {
         public string Name { get; set; }
 
-        public decimal Marks { get; set; }
+        public float Marks { get; set; }
     }
 
 }
