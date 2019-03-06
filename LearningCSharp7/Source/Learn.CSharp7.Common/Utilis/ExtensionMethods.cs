@@ -33,6 +33,12 @@ namespace Learn.CSharp7.Common.Utilis
             salary = student.Salary;
         }
 
+        public static void Deconstruct(this Subject subject, out string name, out decimal marks)
+        {
+            name = subject.Name;
+            marks = subject.Marks;
+        }
+
     }
 
 }
