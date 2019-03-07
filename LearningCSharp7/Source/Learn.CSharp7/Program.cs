@@ -10,6 +10,10 @@ namespace Learn.CSharp7
 {
     static class Program
     {
+
+        public delegate double ConverterForTemperature(double inputTemperature);
+
+
         static void Main(string[] args)
         {
 
