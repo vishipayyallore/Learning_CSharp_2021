@@ -8,6 +8,7 @@ using static System.Console;
 
 namespace Learn.CSharp7
 {
+
     static class Program
     {
 
