@@ -18,6 +18,19 @@ namespace Learn.CSharp7
         static void Main(string[] args)
         {
 
+            ConverterForTemperature converterForTemperature;
+
+            converterForTemperature = new ConverterForTemperature(TemperatureConverter.Fahrenheit);
+
+            double celsius = 28.0;
+            double fahrenheit = converterForTemperature(celsius);
+            WriteLine($"C -> F = {celsius} -> {fahrenheit}");
+
+
+            converterForTemperature = new ConverterForTemperature(TemperatureConverter.Celsius);
+            celsius = converterForTemperature(fahrenheit);
+            WriteLine($"F -> C = {fahrenheit} -> {celsius}");
+
             // ---------------------------- For Quick Experiments -----------------------------------------
             var student = new Common.Models.Student()
             {
