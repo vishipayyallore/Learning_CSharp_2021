@@ -14,13 +14,29 @@ namespace ApplicationCore.Entities
         public Employee(string firstName, string lastName)
         {
             Id = Guid.NewGuid();
-            FirstName = firstName;
-            LastName = lastName;
+            FirstName = firstName ?? throw new ArgumentException($"{nameof(firstName)} cannot be null");
+            LastName = lastName ?? throw new ArgumentException($"{nameof(lastName)} cannot be null");
+
+            // TODO: Replace with Data Annotations.
+            if (IsNullOrWhiteSpace(firstName))
+            {
+                throw new ArgumentException($"{nameof(firstName)} cannot be empty.");
+            }
+
+            if (IsNullOrWhiteSpace(lastName))
+            {
+                throw new ArgumentException($"{nameof(lastName)} cannot be empty.");
+            }
         }
 
         public override string ToString()
         {
             return $"Id: {Id} | First: {FirstName} | Last: {LastName}";
+        }
+
+        private bool IsNullOrWhiteSpace(string value)
+        {
+            return string.IsNullOrWhiteSpace(value);
         }
     }
 
