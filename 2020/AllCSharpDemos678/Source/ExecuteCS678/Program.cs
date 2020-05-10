@@ -1,4 +1,5 @@
-﻿using ApplicationCore.Entities;
+﻿using ApplicationCore.Constants;
+using ApplicationCore.Entities;
 using FactoryPattern.Demo1;
 using static System.Console;
 
@@ -12,15 +13,15 @@ namespace ExecuteCS678
             Employee employee = new Employee("Shiva", "Sai");
             WriteLine(employee);
 
-            IShape rectangle = ShapeFactory.RetrieveShapeObject("Rectangle");
+            IShape rectangle = ShapeFactory.RetrieveShapeObject(Constants.Shapes.RECTANGLE);
             var shapeResponse = rectangle.GetDetails();
             WriteLine($"{shapeResponse.Name} | {shapeResponse.Description}");
 
-            rectangle = ShapeFactory.RetrieveShapeObject("Square");
+            rectangle = ShapeFactory.RetrieveShapeObject(Constants.Shapes.SQUARE);
             shapeResponse = rectangle.GetDetails();
             WriteLine($"{shapeResponse.Name} | {shapeResponse.Description}");
 
-            rectangle = ShapeFactory.RetrieveShapeObject("Unknown");
+            rectangle = ShapeFactory.RetrieveShapeObject(Constants.Shapes.UNKNOWN);
             shapeResponse = rectangle.GetDetails();
             WriteLine($"{shapeResponse.Name} | {shapeResponse.Description}");
 

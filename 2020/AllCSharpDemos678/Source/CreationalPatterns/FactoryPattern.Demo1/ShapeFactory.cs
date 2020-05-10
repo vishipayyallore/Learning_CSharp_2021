@@ -1,4 +1,6 @@
-﻿namespace FactoryPattern.Demo1
+﻿using ApplicationCore.Constants;
+
+namespace FactoryPattern.Demo1
 {
     public static class ShapeFactory
     {
@@ -8,10 +10,10 @@
 
             switch (shapeName)
             {
-                case "Rectangle":
+                case Constants.Shapes.RECTANGLE:
                     shape = new Rectangle();
                     break;
-                case "Square":
+                case Constants.Shapes.SQUARE:
                     shape = new Rectangle();
                     break;
             }
