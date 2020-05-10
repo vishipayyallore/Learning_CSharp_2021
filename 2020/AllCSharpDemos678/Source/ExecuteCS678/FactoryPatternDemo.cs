@@ -33,8 +33,8 @@
         {
             var shapeResponse = new ShapeResponse()
             {
-                Name = nameof(Square),
-                Description = "No details."
+                Name = nameof(Rectangle),
+                Description = "Rectangle details."
             };
 
             return shapeResponse;
@@ -48,7 +48,7 @@
             var shapeResponse = new ShapeResponse()
             {
                 Name = nameof(Square),
-                Description = "No details."
+                Description = "Square details."
             };
 
             return shapeResponse;

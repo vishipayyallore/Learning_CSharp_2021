@@ -12,8 +12,16 @@ namespace ExecuteCS678
             Employee employee = new Employee("Shiva", "Sai");
             WriteLine(employee);
 
-            var rectangle = ShapeFactory.RetrieveShapeObject("Rectangle");
+            IShape rectangle = ShapeFactory.RetrieveShapeObject("Rectangle");
             var shapeResponse = rectangle.GetDetails();
+            WriteLine($"{shapeResponse.Name} | {shapeResponse.Description}");
+
+            rectangle = ShapeFactory.RetrieveShapeObject("Square");
+            shapeResponse = rectangle.GetDetails();
+            WriteLine($"{shapeResponse.Name} | {shapeResponse.Description}");
+
+            rectangle = ShapeFactory.RetrieveShapeObject("Unknown");
+            shapeResponse = rectangle.GetDetails();
             WriteLine($"{shapeResponse.Name} | {shapeResponse.Description}");
 
             WriteLine("\n\nPress any key ...");
