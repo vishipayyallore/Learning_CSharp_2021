@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExecuteCS678", "Source\Exec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCore", "Source\ApplicationCore\ApplicationCore.csproj", "{27990BF8-D802-4A07-A67C-CDD0FE3B2420}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{9EC240F9-D8F0-4D82-8C54-752FC80B6E37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern.Demo1", "Source\CreationalPatterns\FactoryPattern.Demo1\FactoryPattern.Demo1.csproj", "{CEA97DD7-0464-446A-9B15-20F8982A9029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{27990BF8-D802-4A07-A67C-CDD0FE3B2420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27990BF8-D802-4A07-A67C-CDD0FE3B2420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27990BF8-D802-4A07-A67C-CDD0FE3B2420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA97DD7-0464-446A-9B15-20F8982A9029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA97DD7-0464-446A-9B15-20F8982A9029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA97DD7-0464-446A-9B15-20F8982A9029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA97DD7-0464-446A-9B15-20F8982A9029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +48,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D39A1A5E-A2C3-4E17-B327-310F8764AAF4} = {1872AC2F-420A-4506-AD4B-E14258740DF7}
 		{27990BF8-D802-4A07-A67C-CDD0FE3B2420} = {1872AC2F-420A-4506-AD4B-E14258740DF7}
+		{9EC240F9-D8F0-4D82-8C54-752FC80B6E37} = {1872AC2F-420A-4506-AD4B-E14258740DF7}
+		{CEA97DD7-0464-446A-9B15-20F8982A9029} = {9EC240F9-D8F0-4D82-8C54-752FC80B6E37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {756F71B4-A652-4C1F-A8E4-8E4271EDEA11}

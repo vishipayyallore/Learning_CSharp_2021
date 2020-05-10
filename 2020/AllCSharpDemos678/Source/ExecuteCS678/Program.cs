@@ -1,5 +1,5 @@
 ﻿using ApplicationCore.Entities;
-
+using FactoryPattern.Demo1;
 using static System.Console;
 
 namespace ExecuteCS678
