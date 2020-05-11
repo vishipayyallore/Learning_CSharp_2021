@@ -11,12 +11,14 @@ namespace ApplicationCore.Entities
 
         public string LastName { get; set; }
 
+        public string FullName { get; } = "UnKnown"; /* Initialize backing fields for auto-properties */
+
         public Employee(string firstName, string lastName)
         {
             Id = Guid.NewGuid();
             FirstName = firstName ?? throw new ArgumentException($"{nameof(firstName)} cannot be null");
             LastName = lastName ?? throw new ArgumentException($"{nameof(lastName)} cannot be null");
-
+            
             // TODO: Replace with Data Annotations.
             if (IsNullOrWhiteSpace(firstName))
             {
@@ -27,11 +29,13 @@ namespace ApplicationCore.Entities
             {
                 throw new ArgumentException($"{nameof(lastName)} cannot be empty.");
             }
+
+            FullName = $"{FirstName} {LastName}";
         }
 
         public override string ToString()
         {
-            return $"Id: {Id} | First: {FirstName} | Last: {LastName}";
+            return $"Id: {Id} | First: {FirstName} | Last: {LastName} | FullName: {FullName}";
         }
 
         private bool IsNullOrWhiteSpace(string value)
