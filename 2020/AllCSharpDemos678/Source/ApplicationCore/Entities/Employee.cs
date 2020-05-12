@@ -7,7 +7,7 @@ namespace ApplicationCore.Entities
     {
         public Guid Id { get; }
 
-        public string FirstName { get; set; }
+        public string FirstName { get; set; }   /* Read-only auto-properties */
 
         public string LastName { get; set; }
 
@@ -33,15 +33,13 @@ namespace ApplicationCore.Entities
             FullName = $"{FirstName} {LastName}";
         }
 
-        public override string ToString()
-        {
-            return $"Id: {Id} | First: {FirstName} | Last: {LastName} | FullName: {FullName}";
-        }
+        /* Expression-bodied function members */
+        public override string ToString() => 
+                    $"Id: {Id} | First: {FirstName} | Last: {LastName} | FullName: {FullName}";
 
-        private bool IsNullOrWhiteSpace(string value)
-        {
-            return string.IsNullOrWhiteSpace(value);
-        }
+        /* Expression-bodied function members */
+        private bool IsNullOrWhiteSpace(string value) => string.IsNullOrWhiteSpace(value);
+
     }
 
 }
