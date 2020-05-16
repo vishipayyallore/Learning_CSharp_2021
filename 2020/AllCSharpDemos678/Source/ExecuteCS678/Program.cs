@@ -13,7 +13,7 @@ namespace ExecuteCS678
         {
 
             // Person Class
-            Person person1 = new Person()
+            var person1 = new Person()
             {
                 Name = "Shiva Sai",
                 DateOfBirth = DateTime.Now.AddYears(-25),

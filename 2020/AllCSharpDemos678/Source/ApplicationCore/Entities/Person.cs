@@ -3,8 +3,10 @@ using System.Text.Json;
 
 using static System.Console;
 
-namespace ExecuteCS678
+namespace ApplicationCore.Entities
 {
+
+
     public class Person
     {
         public Guid Id { get; }
