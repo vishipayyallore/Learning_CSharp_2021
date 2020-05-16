@@ -1,6 +1,7 @@
 ﻿using ApplicationCore.Constants;
 using ApplicationCore.Entities;
 using FactoryPattern.Demo1;
+using System;
 using static System.Console;
 
 namespace ExecuteCS678
@@ -10,6 +11,20 @@ namespace ExecuteCS678
     {
         static void Main(string[] args)
         {
+
+            // Person Class
+            Person person1 = new Person()
+            {
+                Name = "Shiva Sai",
+                DateOfBirth = DateTime.Now.AddYears(-25),
+                City = "Hyderabad"
+            };
+            WriteLine($"Person 1: {person1}");
+
+            var clonedPerson1 = Person.Parse(person1.ToString());
+            WriteLine($"Cloned Person 1: {clonedPerson1}");
+
+            // Factory Pattern
             Employee employee = new Employee("Shiva", "Sai");
             WriteLine(employee);
 

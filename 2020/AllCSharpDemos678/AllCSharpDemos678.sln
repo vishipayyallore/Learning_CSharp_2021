@@ -21,7 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCore", "Source\A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{9EC240F9-D8F0-4D82-8C54-752FC80B6E37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern.Demo1", "Source\CreationalPatterns\FactoryPattern.Demo1\FactoryPattern.Demo1.csproj", "{CEA97DD7-0464-446A-9B15-20F8982A9029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPattern.Demo1", "Source\CreationalPatterns\FactoryPattern.Demo1\FactoryPattern.Demo1.csproj", "{CEA97DD7-0464-446A-9B15-20F8982A9029}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Progress", "Progress", "{56BFCF88-15C3-440D-BEEA-0FBB62348A90}"
+	ProjectSection(SolutionItems) = preProject
+		CSharp1To5Features.txt = CSharp1To5Features.txt
+		CSharp6Features.txt = CSharp6Features.txt
+		CSharp7Features.txt = CSharp7Features.txt
+		CSharp8Features.txt = CSharp8Features.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +58,7 @@ Global
 		{27990BF8-D802-4A07-A67C-CDD0FE3B2420} = {1872AC2F-420A-4506-AD4B-E14258740DF7}
 		{9EC240F9-D8F0-4D82-8C54-752FC80B6E37} = {1872AC2F-420A-4506-AD4B-E14258740DF7}
 		{CEA97DD7-0464-446A-9B15-20F8982A9029} = {9EC240F9-D8F0-4D82-8C54-752FC80B6E37}
+		{56BFCF88-15C3-440D-BEEA-0FBB62348A90} = {1872AC2F-420A-4506-AD4B-E14258740DF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {756F71B4-A652-4C1F-A8E4-8E4271EDEA11}

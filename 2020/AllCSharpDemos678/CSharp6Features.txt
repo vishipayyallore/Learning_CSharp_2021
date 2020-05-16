@@ -1,0 +1,11 @@
+Completed
+1. Read-only auto-properties
+2. Auto-property initializers
+3. Expression-bodied function members
+4. 
+Pending
+1.
+2.
+3. 
+4.
+5. 
