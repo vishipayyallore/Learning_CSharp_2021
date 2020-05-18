@@ -13,14 +13,3 @@ Pending
 10. Expression bodied members
 11. 
 
-Binary literals and digit separators 
-Pattern matching 
-out variables 
-Tuples 
-Local functions
-Default literal expressions 
-Inferred tuple element names 
-async Main
-Leading underscores in numeric literals
-
-
