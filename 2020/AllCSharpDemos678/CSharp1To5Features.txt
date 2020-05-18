@@ -1,3 +1,26 @@
 Completed
 
 Pending
+1. Nullable value types 
+2. Generics 
+3. Implicitly typed local variables
+4. LINQ
+5. Dynamic types
+6. Named/optional arguments
+7. Simplified asynchronous tasks
+8. static imports
+9. Interpolated strings
+10. Expression bodied members
+11. 
+
+Binary literals and digit separators 
+Pattern matching 
+out variables 
+Tuples 
+Local functions
+Default literal expressions 
+Inferred tuple element names 
+async Main
+Leading underscores in numeric literals
+
+

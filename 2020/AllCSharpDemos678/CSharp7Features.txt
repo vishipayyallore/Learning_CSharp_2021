@@ -1,3 +1,16 @@
 Completed
 
 Pending
+Binary literals and digit separators 
+Pattern matching 
+out variables 
+Tuples 
+Local functions
+Default literal expressions 
+Inferred tuple element names 
+async Main
+Leading underscores in numeric literals
+Non-trailing named arguments 
+private protected access modifier 
+You can test == and != with tuple types
+

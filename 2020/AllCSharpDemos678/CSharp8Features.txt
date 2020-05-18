@@ -1,3 +1,6 @@
 Completed
 
 Pending
+Nullable reference types 
+Switch expressions 
+Default interface methods
