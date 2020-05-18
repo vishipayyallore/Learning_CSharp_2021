@@ -11,6 +11,9 @@ namespace ExecuteCS678
     {
         static void Main(string[] args)
         {
+            Person person = null;
+            var first = person?.Name ?? "Unspecified";
+            WriteLine($"Name: {first}");
 
             // Person Class
             var person1 = new Person()
@@ -20,9 +23,13 @@ namespace ExecuteCS678
                 City = "Hyderabad"
             };
             WriteLine($"Person 1: {person1}");
+            first = person1?.Name ?? "Unspecified";
+            WriteLine($"Name: {first}");
 
             var clonedPerson1 = Person.Parse(person1.ToString());
             WriteLine($"Cloned Person 1: {clonedPerson1}");
+
+            WriteLine($"{person1?.Name} === {clonedPerson1?.Name}");
 
             // Factory Pattern
             Employee employee = new Employee("Shiva", "Sai");

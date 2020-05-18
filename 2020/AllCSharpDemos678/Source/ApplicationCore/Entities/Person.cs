@@ -22,6 +22,7 @@ namespace ApplicationCore.Entities
             Id = Guid.NewGuid();
         }
 
+                                                            // String interpolation
         public void Introduce(Person person) => WriteLine($"Hi {person.Name}, I am {Name}");
 
         public override string ToString() => JsonSerializer.Serialize(this);

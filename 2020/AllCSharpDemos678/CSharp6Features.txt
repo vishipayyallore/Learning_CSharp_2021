@@ -2,7 +2,10 @@ Completed
 1. Read-only auto-properties
 2. Auto-property initializers
 3. Expression-bodied function members
-4. 
+4. using static
+5. String interpolation
+6. Null-conditional operators
+
 Pending
 1.
 2.
