@@ -5,6 +5,7 @@ Completed
 4. using static
 5. String interpolation
 6. Null-conditional operators
+7. The nameof expression
 
 Pending
 1.

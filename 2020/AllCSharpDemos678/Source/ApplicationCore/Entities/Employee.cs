@@ -16,7 +16,10 @@ namespace ApplicationCore.Entities
         public Employee(string firstName, string lastName)
         {
             Id = Guid.NewGuid();
+
+                                                                    // The nameof expression
             FirstName = firstName ?? throw new ArgumentException($"{nameof(firstName)} cannot be null");
+            
             LastName = lastName ?? throw new ArgumentException($"{nameof(lastName)} cannot be null");
             
             // TODO: Replace with Data Annotations.
