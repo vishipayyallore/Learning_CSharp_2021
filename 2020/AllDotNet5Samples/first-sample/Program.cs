@@ -11,9 +11,26 @@ namespace first_sample
         static void Main(string[] args)
         {
             
+            var index = 1;
             foreach( var currentAssembly in Assembly.GetEntryAssembly().GetReferencedAssemblies())
             {
-                WriteLine($"{currentAssembly.Name}");
+                WriteLine($"{index++}. {currentAssembly.Name}");
+                WriteLine("=========================================");
+
+                // Load Current Assembly
+                var assembly = Assembly.Load(new AssemblyName(currentAssembly.FullName));
+                
+                var totalMethods = 0;
+                foreach(var currentType in assembly.DefinedTypes)
+                {
+                    var methodCount = currentType.GetMethods().Count();
+                    WriteLine( $"\t{currentType.FullName} - Method Count: {methodCount}");
+                    
+                    totalMethods += methodCount;
+                }
+
+                Console.WriteLine( $"{assembly.DefinedTypes.Count():N0} types with {totalMethods:N0} methods in {currentAssembly.Name} assembly.");
+                WriteLine("------------------------------------------------\n\n");
             }
 
             WriteLine("\n\nPress any key ...");

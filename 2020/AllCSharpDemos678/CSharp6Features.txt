@@ -6,6 +6,7 @@ Completed
 5. String interpolation
 6. Null-conditional operators
 7. The nameof expression
+8. Exception filters
 
 Pending
 1.

@@ -2,6 +2,8 @@
 using ApplicationCore.Entities;
 using FactoryPattern.Demo1;
 using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 using static System.Console;
 
 namespace ExecuteCS678
@@ -9,8 +11,12 @@ namespace ExecuteCS678
 
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+
+            var output = await MakeRequest().ConfigureAwait(false);
+            WriteLine($"Output: {output}");
+
             Person person = null;
             var first = person?.Name ?? "Unspecified";
             WriteLine($"Name: {first}");
@@ -50,6 +56,29 @@ namespace ExecuteCS678
             WriteLine("\n\nPress any key ...");
             ReadKey();
         }
+
+        public static async Task<string> MakeRequest()
+        {
+            HttpClientHandler webRequestHandler = new HttpClientHandler
+            {
+                AllowAutoRedirect = false
+            };
+
+            using (HttpClient client = new HttpClient(webRequestHandler))
+            {
+                var stringTask = client.GetStringAsync("https://docs.microsoft.com/en-us/dotnet/about/");
+                try
+                {
+                    var responseText = await stringTask;
+                    return responseText;
+                }
+                catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains("301"))
+                {
+                    return "Site Moved";
+                }
+            }
+        }
+
     }
 
 }
