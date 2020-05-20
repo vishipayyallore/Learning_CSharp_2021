@@ -10,7 +10,9 @@ namespace first_sample
     {
         static void Main(string[] args)
         {
-            
+            System.Data.DataSet ds; 
+            System.Net.Http.HttpClient client;
+
             var index = 1;
             foreach( var currentAssembly in Assembly.GetEntryAssembly().GetReferencedAssemblies())
             {
@@ -24,7 +26,7 @@ namespace first_sample
                 foreach(var currentType in assembly.DefinedTypes)
                 {
                     var methodCount = currentType.GetMethods().Count();
-                    WriteLine( $"\t{currentType.FullName} - Method Count: {methodCount}");
+                    // WriteLine( $"\t{currentType.FullName} - Method Count: {methodCount}");
                     
                     totalMethods += methodCount;
                 }
