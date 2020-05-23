@@ -3,7 +3,6 @@
 
 namespace first_sample
 {
-
     public class Order
     {
         public Guid Id { get; set; }
