@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{2A60C2D0-166F-43A3-80A0-53ABB9C14954}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{5CCA201A-63C3-4597-BB39-E9E479869673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{7ADA0D78-6FE7-4B6D-BCA8-03F50B5980E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0A77C12A-ED2D-4812-B49B-42FDCBF83283}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4BE42603-9B51-43A2-BE5C-4E1F6DC4B7AC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{9F0492EE-358B-4639-9F92-6595F17FF06D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicalSamples.App", "Source\LogicalSamples.App\LogicalSamples.App.csproj", "{CCF945CF-6115-4E46-87E4-AE8F99DC489B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCF945CF-6115-4E46-87E4-AE8F99DC489B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF945CF-6115-4E46-87E4-AE8F99DC489B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF945CF-6115-4E46-87E4-AE8F99DC489B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF945CF-6115-4E46-87E4-AE8F99DC489B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F0492EE-358B-4639-9F92-6595F17FF06D} = {7ADA0D78-6FE7-4B6D-BCA8-03F50B5980E7}
+		{CCF945CF-6115-4E46-87E4-AE8F99DC489B} = {7ADA0D78-6FE7-4B6D-BCA8-03F50B5980E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C61CF40-FDC2-4863-A356-D8998B36910E}
+	EndGlobalSection
+EndGlobal
