@@ -1,11 +1,12 @@
-﻿using static System.Console;
+﻿
+using static System.Console;
 
 namespace LogicalSamples.App
 {
-
-    class Program
+    public class JumpingCloudsHelper
     {
-        static void Main(string[] args)
+
+        public void Execute()
         {
             int[] items = { 0, 0, 1, 0, 0, 1, 1, 0 };
             int jumps = 2;
@@ -25,9 +26,6 @@ namespace LogicalSamples.App
             jumps = 3;
             energy = jumpingClouds.jumpingOnClouds(items, jumps);
             WriteLine($"Energy: {energy}");
-
-            WriteLine("\n\nPress any key ...");
-            ReadKey();
         }
 
     }
