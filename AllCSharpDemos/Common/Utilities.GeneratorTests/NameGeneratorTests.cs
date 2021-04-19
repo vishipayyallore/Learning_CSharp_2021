@@ -14,7 +14,6 @@ namespace Utilities.GeneratorTests
             {
                 var name = NameGenerator.GenerateName(10);
 
-                // Console.WriteLine($"{name} === {name.Length}");
                 Assert.IsNotNull(name);
                 Assert.IsTrue(name.Length >= 10);
             }

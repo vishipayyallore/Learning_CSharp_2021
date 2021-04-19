@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace Utilities.Generator
 {
@@ -10,19 +11,20 @@ namespace Utilities.Generator
 
         private static readonly string[] _vowels = { "a", "e", "i", "o", "u", "ae", "y" };
 
+        static readonly Random _random = new();
 
         static public string GenerateName(int length)
         {
             StringBuilder name = new(length);
             int index = 2;
 
-            name.Append(GetAConstant().ToUpper());
-            name.Append(GetAVowel());
+            name.Append(_consonants[_random.Next(0, _consonants.Length)]);
+            name.Append(_vowels[_random.Next(0, _vowels.Length)]);
 
             while (index < length)
             {
-                name.Append(GetAConstant());
-                name.Append(GetAVowel());
+                name.Append(_consonants[_random.Next(0, _consonants.Length)]);
+                name.Append(_vowels[_random.Next(0, _vowels.Length)]);
 
                 index += 2;
             }
@@ -30,14 +32,5 @@ namespace Utilities.Generator
             return name.ToString();
         }
 
-        private static string GetAConstant()
-        {
-            return _consonants[RandomNumberGenerator.GetRandomValue(0, _consonants.Length)];
-        }
-
-        private static string GetAVowel()
-        {
-            return _vowels[RandomNumberGenerator.GetRandomValue(0, _vowels.Length)];
-        }
     }
 }
