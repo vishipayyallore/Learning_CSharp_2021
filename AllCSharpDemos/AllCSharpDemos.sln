@@ -3,9 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV2Demos", "CSharpV2Demos", "{8F00A8C7-1C13-42FE-81FE-2E49E98FA8EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV3Demos", "CSharpV3Demos", "{80A06B66-2B59-4142-81EF-9A647811C846}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV4Demos", "CSharpV4Demos", "{44AD1287-8071-4CF5-A465-0A35BE83E1C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV5Demos", "CSharpV5Demos", "{9005C1C1-511E-49A9-A508-9F3FC04B9B4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV6Demos", "CSharpV6Demos", "{8DE4DB89-3A23-4888-B062-9ABD17B3CBF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV7Demos", "CSharpV7Demos", "{E0F2BC5A-E543-4C0C-9D63-E7F6E8F34E76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV71Demos", "CSharpV71Demos", "{AD059ED6-A073-42A6-9EFA-2422B166CF96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV72Demos", "CSharpV72Demos", "{C089FD65-ABE6-4420-B3C7-9B5DB3BC94A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV73Demos", "CSharpV73Demos", "{836A800D-6DE5-48D4-AFBC-A7F068CC804D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV8Demos", "CSharpV8Demos", "{863A6716-88FD-4A02-BF40-197F5E085D69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV9Demos", "CSharpV9Demos", "{D028B41F-E150-4A10-A15A-C48A616313C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D7A2BD95-F022-4CF6-A875-EF3766F15EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Generator", "Common\Utilities.Generator\Utilities.Generator.csproj", "{774A0CA6-DC13-49C2-BF6E-BE02E57A55F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.GeneratorTests", "Common\Utilities.GeneratorTests\Utilities.GeneratorTests.csproj", "{D77DCCBF-2BD1-41DA-9DC6-32BD25E132D1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{774A0CA6-DC13-49C2-BF6E-BE02E57A55F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774A0CA6-DC13-49C2-BF6E-BE02E57A55F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774A0CA6-DC13-49C2-BF6E-BE02E57A55F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774A0CA6-DC13-49C2-BF6E-BE02E57A55F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77DCCBF-2BD1-41DA-9DC6-32BD25E132D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77DCCBF-2BD1-41DA-9DC6-32BD25E132D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77DCCBF-2BD1-41DA-9DC6-32BD25E132D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77DCCBF-2BD1-41DA-9DC6-32BD25E132D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{774A0CA6-DC13-49C2-BF6E-BE02E57A55F7} = {D7A2BD95-F022-4CF6-A875-EF3766F15EFB}
+		{D77DCCBF-2BD1-41DA-9DC6-32BD25E132D1} = {D7A2BD95-F022-4CF6-A875-EF3766F15EFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2C39726-9041-481F-B53B-B10E21F2B545}
