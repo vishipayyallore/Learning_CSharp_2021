@@ -4,16 +4,15 @@ using System.Text;
 namespace Utilities.Generator
 {
 
-    public static class NameGenerator
+    public class NameGenerator : INameGenerator
     {
-
         private static readonly string[] _consonants = { "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "l", "n", "p", "q", "r", "s", "sh", "zh", "t", "v", "w", "x" };
 
         private static readonly string[] _vowels = { "a", "e", "i", "o", "u", "ae", "y" };
 
         static readonly Random _random = new();
 
-        static public string GenerateName(int length)
+        public string GenerateName(int length)
         {
             StringBuilder name = new(length);
             int index = 2;
@@ -33,4 +32,5 @@ namespace Utilities.Generator
         }
 
     }
+
 }
