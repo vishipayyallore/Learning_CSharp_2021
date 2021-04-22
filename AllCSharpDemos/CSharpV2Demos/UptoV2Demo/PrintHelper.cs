@@ -1,12 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UptoV2Demo
 {
-    class PrintHelper
+
+    public class PrintHelper : IPrintHelper
     {
+
+        public void Print(string[] items)
+        {
+            Array.ForEach(items, item =>
+            {
+                Console.WriteLine($"{item}");
+            });
+        }
+
     }
+
 }
