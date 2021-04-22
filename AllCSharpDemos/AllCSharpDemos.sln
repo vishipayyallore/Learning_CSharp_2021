@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV2Demos", "CSharpV2Demos", "{8F00A8C7-1C13-42FE-81FE-2E49E98FA8EF}"
+	ProjectSection(SolutionItems) = preProject
+		CSharpV2Demos\README.md = CSharpV2Demos\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV3Demos", "CSharpV3Demos", "{80A06B66-2B59-4142-81EF-9A647811C846}"
 EndProject

@@ -15,7 +15,6 @@ namespace Try.Generator
             _nameGenerator = nameGenerator ?? throw new ArgumentNullException(nameof(nameGenerator));
         }
 
-
         // Application starting point
         public void Run()
         {
