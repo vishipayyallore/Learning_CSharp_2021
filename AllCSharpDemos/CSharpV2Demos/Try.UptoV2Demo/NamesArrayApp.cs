@@ -3,12 +3,12 @@ using UptoV2Demo;
 
 namespace Try.UptoV2Demo
 {
-    public class TryNamesArrayApplication
+    public class NamesArrayApp
     {
         private readonly INamesArray _namesArray;
         private readonly IPrintHelper _printHelper;
 
-        public TryNamesArrayApplication(INamesArray namesArray, IPrintHelper printHelper)
+        public NamesArrayApp(INamesArray namesArray, IPrintHelper printHelper)
         {
             _namesArray = namesArray ?? throw new ArgumentNullException(nameof(namesArray));
 
@@ -25,7 +25,10 @@ namespace Try.UptoV2Demo
             //});
 
             // Version 2\.
-            _printHelper.Print(_namesArray.GenerateNames(10));
+            Random _random = new();
+            _printHelper.Print(_namesArray.GenerateNames(numberOfNames: 100, nameLength: _random.Next(1, 10)));
         }
+
     }
+
 }

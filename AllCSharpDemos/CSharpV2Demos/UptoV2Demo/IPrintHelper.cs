@@ -1,10 +1,12 @@
-﻿namespace UptoV2Demo
+﻿using System.Collections;
+
+namespace UptoV2Demo
 {
     public interface IPrintHelper
     {
         void Print(string[] items);
 
-        void Print<T>(T items);
+        void Print(ArrayList items);
     }
 
 }

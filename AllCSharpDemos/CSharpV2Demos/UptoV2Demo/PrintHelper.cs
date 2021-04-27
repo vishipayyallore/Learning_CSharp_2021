@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace UptoV2Demo
 {
@@ -12,19 +13,20 @@ namespace UptoV2Demo
 
             Array.ForEach(items, item =>
             {
-                Console.WriteLine($"{index++}. {item}");
+                Console.WriteLine($"{index++}. {item} ({item.Length})");
             });
         }
 
-        public void Print<T>(T items)
+        public void Print(ArrayList items)
         {
             int index = 1;
 
-            foreach(var item in items as string[])
+            foreach (var item in items)
             {
-                Console.WriteLine($"{index++}. {item}");
+                Console.WriteLine($"{index++}. {item} ({item.ToString().Length})");
             }
         }
+
     }
 
 }

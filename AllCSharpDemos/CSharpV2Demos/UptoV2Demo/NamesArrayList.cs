@@ -1,29 +1,31 @@
 ﻿using System;
+using System.Collections;
 using Utilities.Generator;
 
 namespace UptoV2Demo
 {
 
-    public class NamesArray : INamesArray
+    public class NamesArrayList : INamesArrayList
     {
         private readonly INameGenerator _nameGenerator;
 
-        public NamesArray(INameGenerator nameGenerator)
+        public NamesArrayList(INameGenerator nameGenerator)
         {
             _nameGenerator = nameGenerator ?? throw new ArgumentNullException(nameof(nameGenerator));
         }
 
-        public string[] GenerateNames(int numberOfNames = 10, int nameLength = 10)
+        public ArrayList GenerateNames(int numberOfNames = 10, int nameLength = 10)
         {
-            string[] names = new string[numberOfNames];
+            ArrayList names = new();
 
             for (int index = 0; index < numberOfNames; index++)
             {
-                names[index] = _nameGenerator.GenerateName(nameLength);
+                names.Add(_nameGenerator.GenerateName(nameLength));
             }
 
             return names;
         }
+
     }
 
 }

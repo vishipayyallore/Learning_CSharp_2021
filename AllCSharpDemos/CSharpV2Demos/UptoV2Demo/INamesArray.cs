@@ -2,6 +2,6 @@
 {
     public interface INamesArray
     {
-        string[] GenerateNames(int numberOfNames);
+        string[] GenerateNames(int numberOfNames = 10, int nameLength = 10);
     }
 }

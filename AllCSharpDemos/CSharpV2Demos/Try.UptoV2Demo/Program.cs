@@ -17,7 +17,8 @@ namespace Try.UptoV2Demo
             var serviceProvider = services.BuildServiceProvider();
 
             // Kick off our actual code
-            serviceProvider.GetService<TryNamesArrayApplication>().Run();
+            serviceProvider.GetService<NamesArrayApp>().Run();
+            serviceProvider.GetService<NamesArrayListApp>().Run();
 
             WriteLine("\n\nPress any key ...");
             ReadKey();
@@ -30,9 +31,11 @@ namespace Try.UptoV2Demo
             services.AddTransient<INameGenerator, NameGenerator>();
             services.AddTransient<IPrintHelper, PrintHelper>();
             services.AddTransient<INamesArray, NamesArray>();
+            services.AddTransient<INamesArrayList, NamesArrayList>();
 
             // IMPORTANT! Register our application entry point
-            services.AddTransient<TryNamesArrayApplication>();
+            services.AddTransient<NamesArrayApp>();
+            services.AddTransient<NamesArrayListApp>();
 
             return services;
         }
