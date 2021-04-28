@@ -17,7 +17,7 @@ namespace Utilities.Generator
             StringBuilder name = new(length);
             int index = 2;
 
-            name.Append(_consonants[_random.Next(0, _consonants.Length)]);
+            name.Append(_consonants[_random.Next(0, _consonants.Length)].ToUpper());
             name.Append(_vowels[_random.Next(0, _vowels.Length)]);
 
             while (index < length)

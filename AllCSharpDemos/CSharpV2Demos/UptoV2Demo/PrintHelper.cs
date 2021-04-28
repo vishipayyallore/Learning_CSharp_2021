@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Specialized;
 
 namespace UptoV2Demo
 {
@@ -24,6 +25,16 @@ namespace UptoV2Demo
             foreach (var item in items)
             {
                 Console.WriteLine($"{index++}. {item} ({item.ToString().Length})");
+            }
+        }
+
+        public void Print(StringCollection items)
+        {
+            int index = 1;
+
+            foreach (var item in items)
+            {
+                Console.WriteLine($"{index++}. {item} ({item.Length})");
             }
         }
 

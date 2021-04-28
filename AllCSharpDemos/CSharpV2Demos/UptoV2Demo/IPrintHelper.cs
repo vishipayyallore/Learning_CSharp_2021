@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Specialized;
 
 namespace UptoV2Demo
 {
@@ -7,6 +8,8 @@ namespace UptoV2Demo
         void Print(string[] items);
 
         void Print(ArrayList items);
+
+        void Print(StringCollection items);
     }
 
 }
