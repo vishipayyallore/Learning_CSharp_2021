@@ -20,8 +20,8 @@ namespace Try.UptoV2Demo
             // Kick off our actual code
             // serviceProvider.GetService<NamesArrayApp>().Run();
             // serviceProvider.GetService<NamesArrayListApp>().Run();
-            serviceProvider.GetService<NamesStringCollectionApp>().Run();
-
+            // serviceProvider.GetService<NamesStringCollectionApp>().Run();
+            serviceProvider.GetService<NamesListStringApp>().Run();
 
             WriteLine("\n\nPress any key ...");
             ReadKey();
@@ -37,13 +37,17 @@ namespace Try.UptoV2Demo
             services.AddTransient<INamesArray, NamesArray>();
             services.AddTransient<INamesArrayList, NamesArrayList>();
             services.AddTransient<INamesStringCollection, NamesStringCollection>();
+            services.AddTransient<INamesListString, NamesListString>();
 
             // IMPORTANT! Register our application entry point
             services.AddTransient<NamesArrayApp>();
             services.AddTransient<NamesArrayListApp>();
             services.AddTransient<NamesStringCollectionApp>();
+            services.AddTransient<NamesListStringApp>();
 
             return services;
         }
+
     }
+
 }

@@ -26,7 +26,7 @@ namespace Try.UptoV2Demo
 
             // Version 2\.
             Random _random = new();
-            _printHelper.Print(_namesArray.GenerateNames(numberOfNames: 100, nameLength: _random.Next(1, 10)));
+            _printHelper.Print(_namesArray.GenerateNames(numberOfNames: 10, nameLength: _random.Next(1, 10)));
         }
 
     }
