@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Try.DSA
+namespace DSA.ArraysDemo
 {
     public class CalendarOperations : ICalendarOperations
     {
