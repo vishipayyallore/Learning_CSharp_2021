@@ -21,7 +21,7 @@ namespace Try.DSA
             };
 
             ForegroundColor = ConsoleColor.Yellow;
-            
+
             Array.ForEach(daysOfWeek, (label) => Write($"{label,10} | "));
             WriteLine();
 
@@ -31,7 +31,7 @@ namespace Try.DSA
             var index = Array.IndexOf<string>(daysOfWeek, dates[0].DayOfWeek.ToString());
 
             ForegroundColor = ConsoleColor.Cyan;
-            for (var counter=0; counter < index; counter++)
+            for (var counter = 0; counter < index; counter++)
             {
                 Write($"{string.Empty,10} | ");
             }
@@ -41,7 +41,7 @@ namespace Try.DSA
                 ForegroundColor = (index < 5) ? ConsoleColor.Cyan : ConsoleColor.Gray;
                 Write($"{currentDay.ToShortDateString(),10} | ");
                 index++;
-                if(index >= 7)
+                if (index >= 7)
                 {
                     WriteLine();
                     index = 0;
