@@ -2,7 +2,7 @@
 
 namespace V7Demos
 {
-    public class Class1
+    public class ShowOutVariablesDemo
     {
     }
 }
