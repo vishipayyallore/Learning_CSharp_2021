@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace V7Demos
+﻿namespace V7Demos
 {
     public class ShowOutVariablesDemo
     {
