@@ -56,16 +56,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "V7Demos.Tests", "CSharpV7De
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MiniProjects", "MiniProjects", "{1B245FA2-72D0-4F97-8B32-C4BBFC255AB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try.WeatherUtility", "MiniProjects\Try.WeatherUtility\Try.WeatherUtility.csproj", "{35322115-BEF8-4DF8-BC9D-40D234D1DB91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Try.WeatherUtility", "MiniProjects\Try.WeatherUtility\Try.WeatherUtility.csproj", "{35322115-BEF8-4DF8-BC9D-40D234D1DB91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherUtility", "MiniProjects\WeatherUtility\WeatherUtility.csproj", "{DF62F39D-AEB5-4063-A8EA-B7861428E099}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherUtility", "MiniProjects\WeatherUtility\WeatherUtility.csproj", "{DF62F39D-AEB5-4063-A8EA-B7861428E099}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherUtility.Tests", "MiniProjects\WeatherUtility.Tests\WeatherUtility.Tests.csproj", "{7C08E6E5-0804-4085-A42C-58A48FB41A4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherUtility.Tests", "MiniProjects\WeatherUtility.Tests\WeatherUtility.Tests.csproj", "{7C08E6E5-0804-4085-A42C-58A48FB41A4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11855AE3-9D66-493F-AFB0-F0773FACFD05}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try.SingleLinkedList", "DSA\Try.SingleLinkedList\Try.SingleLinkedList.csproj", "{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{7C08E6E5-0804-4085-A42C-58A48FB41A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C08E6E5-0804-4085-A42C-58A48FB41A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C08E6E5-0804-4085-A42C-58A48FB41A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +154,7 @@ Global
 		{35322115-BEF8-4DF8-BC9D-40D234D1DB91} = {1B245FA2-72D0-4F97-8B32-C4BBFC255AB5}
 		{DF62F39D-AEB5-4063-A8EA-B7861428E099} = {1B245FA2-72D0-4F97-8B32-C4BBFC255AB5}
 		{7C08E6E5-0804-4085-A42C-58A48FB41A4C} = {1B245FA2-72D0-4F97-8B32-C4BBFC255AB5}
+		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E} = {70A70A6B-B6D9-4AFD-B9A9-91F93AFCF1EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2C39726-9041-481F-B53B-B10E21F2B545}
