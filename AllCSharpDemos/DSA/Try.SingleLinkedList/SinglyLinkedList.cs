@@ -104,14 +104,3 @@ namespace Try.SingleLinkedList
     }
 
 }
-
-//public void AddFirst(int data)
-//{
-//    AddFirst(GetNewNode(data));
-//}
-
-//public void AddLast(int data)
-//{
-//    AddLast(GetNewNode(data));
-//}
-
