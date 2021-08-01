@@ -4,16 +4,42 @@
     public class SinglyLinkedList
     {
         public Node Head { get; private set; }
+
         public Node Tail { get; private set; }
 
         public int Count { get; private set; }
 
         public bool IsEmpty => Count == 0;
 
-        public void AddFirst(int value)
+        public void AddFirst(int data)
         {
-            AddFirst(GetNewNode(value));
+            AddFirst(GetNewNode(data));
         }
+
+        public void AddLast(int data)
+        {
+            AddLast(GetNewNode(data));
+        }
+
+        public void InsertAt(int data, int position)
+        {
+            int counter = 1;
+            Node currentNode = Head;
+
+            while (counter < position)
+            {
+                currentNode = currentNode.Next;
+                counter++;
+            }
+
+            Node newNode = GetNewNode(data);
+            newNode.Next = currentNode.Next;
+
+            currentNode.Next = newNode;
+            Count++;
+        }
+
+        private static Node GetNewNode(int data) => new(data);
 
         private void AddFirst(Node newHead)
         {
@@ -31,11 +57,6 @@
             }
         }
 
-        public void AddLast(int value)
-        {
-            AddLast(GetNewNode(value));
-        }
-
         private void AddLast(Node newTail)
         {
             if (IsEmpty)
@@ -51,25 +72,6 @@
 
             Count++;
         }
-
-        public void InsertAt(int data, int position)
-        {
-            int counter = 1;
-            Node currentNode = Head;
-            Node newNode = GetNewNode(data);
-
-            while (counter < position)
-            {
-                currentNode = currentNode.Next;
-                counter++;
-            }
-
-            newNode.Next = currentNode.Next;
-            currentNode.Next = newNode;
-            Count++;
-        }
-
-        private Node GetNewNode(int data) => new(data);
 
     }
 

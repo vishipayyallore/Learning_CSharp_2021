@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using static System.Console;
 
 namespace Try.SingleLinkedList
@@ -14,36 +13,33 @@ namespace Try.SingleLinkedList
 
             string nodeInformation = "5,1";
             int[] nodeDetails = nodeInformation.Split(',').Select(int.Parse).ToArray();
-
             AddValuetoSinglyLinkedList(_singlyLinkedList, nodeDetails[0], --nodeDetails[1]);
 
             nodeInformation = "9,7";
             nodeDetails = nodeInformation.Split(',').Select(int.Parse).ToArray();
-
             AddValuetoSinglyLinkedList(_singlyLinkedList, nodeDetails[0], --nodeDetails[1]);
 
             nodeInformation = "99,3";
             nodeDetails = nodeInformation.Split(',').Select(int.Parse).ToArray();
-
             AddValuetoSinglyLinkedList(_singlyLinkedList, nodeDetails[0], --nodeDetails[1]);
 
             WriteLine("\n\nPress any key ...");
             ReadKey();
         }
 
-        private static void AddValuetoSinglyLinkedList(SinglyLinkedList _singlyLinkedList, int value, int position)
+        private static void AddValuetoSinglyLinkedList(SinglyLinkedList _singlyLinkedList, int data, int position)
         {
             if (position == 0)
             {
-                _singlyLinkedList.AddFirst(value);
+                _singlyLinkedList.AddFirst(data);
             }
             else if (position == _singlyLinkedList.Count)
             {
-                _singlyLinkedList.AddLast(value);
+                _singlyLinkedList.AddLast(data);
             }
             else
             {
-                _singlyLinkedList.InsertAt(value, position);
+                _singlyLinkedList.InsertAt(data, position);
             }
         }
 
