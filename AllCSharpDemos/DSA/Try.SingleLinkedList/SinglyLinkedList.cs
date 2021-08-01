@@ -1,4 +1,6 @@
-﻿namespace Try.SingleLinkedList
+﻿using System.Linq;
+
+namespace Try.SingleLinkedList
 {
 
     public class SinglyLinkedList
@@ -11,32 +13,40 @@
 
         public bool IsEmpty => Count == 0;
 
-        public void AddFirst(int data)
+        public void InitializeSinglyLinkedList()
         {
-            AddFirst(GetNewNode(data));
+            // Initial List 1 -> 5 -> 10 -> 3 -> 6
+            AddLast(GetNewNode(1));
+            AddLast(GetNewNode(5));
+            AddLast(GetNewNode(10));
+            AddLast(GetNewNode(3));
+            AddLast(GetNewNode(6));
         }
 
-        public void AddLast(int data)
+        public void AddDataToSinglyLinkedList(string nodeInformation)
         {
-            AddLast(GetNewNode(data));
-        }
+            int[] nodeDetails = nodeInformation.Split(',')
+                                                .Select(int.Parse)
+                                                .ToArray();
 
-        public void InsertAt(int data, int position)
-        {
-            int counter = 1;
-            Node currentNode = Head;
+            int data = nodeDetails[0];
 
-            while (counter < position)
+            // As we are having 1 as starting Index.
+            int position = (IsEmpty || (nodeDetails[1] < 0)) ? 0 :
+                                ((nodeDetails[1] - 1) > Count) ? Count : --nodeDetails[1];
+
+            if (position == 0)
             {
-                currentNode = currentNode.Next;
-                counter++;
+                AddFirst(GetNewNode(data));
             }
-
-            Node newNode = GetNewNode(data);
-            newNode.Next = currentNode.Next;
-
-            currentNode.Next = newNode;
-            Count++;
+            else if (position == Count)
+            {
+                AddLast(GetNewNode(data));
+            }
+            else
+            {
+                InsertAt(data, position);
+            }
         }
 
         private static Node GetNewNode(int data) => new(data);
@@ -55,6 +65,24 @@
             {
                 Tail = Head;
             }
+        }
+
+        private void InsertAt(int data, int position)
+        {
+            int counter = 1;
+            Node currentNode = Head;
+
+            while (counter < position)
+            {
+                currentNode = currentNode.Next;
+                counter++;
+            }
+
+            Node newNode = GetNewNode(data);
+            newNode.Next = currentNode.Next;
+
+            currentNode.Next = newNode;
+            Count++;
         }
 
         private void AddLast(Node newTail)
@@ -76,3 +104,14 @@
     }
 
 }
+
+//public void AddFirst(int data)
+//{
+//    AddFirst(GetNewNode(data));
+//}
+
+//public void AddLast(int data)
+//{
+//    AddLast(GetNewNode(data));
+//}
+
