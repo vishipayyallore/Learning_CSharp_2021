@@ -30,10 +30,10 @@ namespace Try.SingleLinkedList
                                                 .ToArray();
 
             int data = nodeDetails[0];
+            int position = --nodeDetails[1];
 
             // As we are having 1 as starting Index.
-            int position = (IsEmpty || (nodeDetails[1] < 0)) ? 0 :
-                                ((nodeDetails[1] - 1) > Count) ? Count : --nodeDetails[1];
+            position = (IsEmpty || (nodeDetails[1] < 0)) ? 0 : (position > Count) ? Count : position;
 
             if (position == 0)
             {
