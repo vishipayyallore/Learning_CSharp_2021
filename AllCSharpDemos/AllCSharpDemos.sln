@@ -67,7 +67,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try.SingleLinkedList", "DSA\Try.SingleLinkedList\Try.SingleLinkedList.csproj", "{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Try.SingleLinkedList", "DSA\Try.SingleLinkedList\Try.SingleLinkedList.csproj", "{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.SingleLinkedList", "DSA\DSA.SingleLinkedList\DSA.SingleLinkedList.csproj", "{18853F00-A6D4-45B6-9FEB-E6E79475B6CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18853F00-A6D4-45B6-9FEB-E6E79475B6CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18853F00-A6D4-45B6-9FEB-E6E79475B6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18853F00-A6D4-45B6-9FEB-E6E79475B6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18853F00-A6D4-45B6-9FEB-E6E79475B6CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +161,7 @@ Global
 		{DF62F39D-AEB5-4063-A8EA-B7861428E099} = {1B245FA2-72D0-4F97-8B32-C4BBFC255AB5}
 		{7C08E6E5-0804-4085-A42C-58A48FB41A4C} = {1B245FA2-72D0-4F97-8B32-C4BBFC255AB5}
 		{8F5A8D80-E228-4ABE-951D-A0B42EBD2A3E} = {70A70A6B-B6D9-4AFD-B9A9-91F93AFCF1EE}
+		{18853F00-A6D4-45B6-9FEB-E6E79475B6CC} = {70A70A6B-B6D9-4AFD-B9A9-91F93AFCF1EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2C39726-9041-481F-B53B-B10E21F2B545}

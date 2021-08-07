@@ -1,4 +1,6 @@
-﻿using static System.Console;
+﻿using DSA.SingleLinkedList;
+
+using static System.Console;
 
 namespace Try.SingleLinkedList
 {
