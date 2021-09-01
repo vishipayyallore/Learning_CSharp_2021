@@ -1,4 +1,5 @@
 ﻿using System;
+
 using static System.Console;
 
 namespace WeatherUtility
@@ -6,7 +7,7 @@ namespace WeatherUtility
 
     public class WeatherReport : IWeatherReport
     {
-        readonly IWeatherUtilities _weatherUtilities = new WeatherUtilities();
+        private readonly IWeatherUtilities _weatherUtilities;
 
         public WeatherReport(IWeatherUtilities weatherUtilities)
         {
@@ -20,11 +21,11 @@ namespace WeatherUtility
             return comfortIndex;
         }
 
-        public void DisplayReport(string location, float temperatureCelsius, float humidity)
+        public void DisplayReport(WeatherData weatherData)
         {
-            var temperatureFahrenheit = _weatherUtilities.CelsiusToFahrenheit(temperatureCelsius);
+            var temperatureFahrenheit = _weatherUtilities.CelsiusToFahrenheit(weatherData.TemperatureCelsius);
 
-            WriteLine($"Comfort Index for {location} : {ComfortIndex(temperatureFahrenheit, humidity)}");
+            WriteLine($"Comfort Index for {weatherData.Location} : {ComfortIndex(temperatureFahrenheit, weatherData.Humidity)}");
         }
 
     }
