@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using HeaderFooter.Interfaces.Utilities;
+using HeaderFooter.Utilities;
+using Microsoft.Extensions.DependencyInjection;
 using WeatherUtility;
 using WeatherUtility.Core.Interfaces;
 
@@ -30,6 +32,10 @@ namespace Try.WeatherUtility
 
             services.AddTransient<IWeatherUtilities, WeatherUtilities>();
             services.AddTransient<IWeatherReport, WeatherReport>();
+
+            // Header Footer
+            services.AddTransient<IHeader, Header>();
+            services.AddTransient<IFooter, Footer>();
 
             // IMPORTANT! Register the application entry point
             services.AddTransient<WeatherUtilityApp>();

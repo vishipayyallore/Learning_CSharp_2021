@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeaderFooter.Interfaces.Utilities;
+using System;
 using System.Collections.Generic;
 using WeatherUtility.Core.Entities;
 using WeatherUtility.Core.Interfaces;
@@ -12,15 +13,22 @@ namespace Try.WeatherUtility
     {
         private readonly IWeatherUtilities _weatherUtilities;
         private readonly IWeatherReport _weatherReport;
+        private readonly IHeader _header;
+        private readonly IFooter _footer;
 
         // Prefilling with Dummy data
         private IList<WeatherData> WeatherDatas { get; set; } = GetWeatherData();
 
-        public WeatherUtilityApp(IWeatherUtilities weatherUtilities, IWeatherReport weatherReport)
+        public WeatherUtilityApp(IWeatherUtilities weatherUtilities, IWeatherReport weatherReport,
+            IHeader header, IFooter footer)
         {
             _weatherUtilities = weatherUtilities ?? throw new ArgumentNullException(nameof(weatherUtilities));
 
             _weatherReport = weatherReport ?? throw new ArgumentNullException(nameof(weatherReport));
+
+            _header = header ?? throw new ArgumentNullException(nameof(header));
+
+            _footer = footer ?? throw new ArgumentNullException(nameof(footer));
         }
 
         // Application starting point
@@ -31,38 +39,23 @@ namespace Try.WeatherUtility
             ShowWeatherReport();
         }
 
-        private static void DisplayHeader(char header, string title, int length = 100)
-        {
-            var leftPadValue = ((length - title.Length) / 2) + title.Length;
-            string headerValue = new(header, length);
-
-            WriteLine($"\n\n{headerValue}");
-            WriteLine(title.PadLeft(leftPadValue));
-            WriteLine($"{headerValue}\n");
-        }
-
-        private static void DisplayFooter(char footer, int length = 100)
-        {
-            WriteLine($"\n{new string(footer, length)}\n");
-        }
-
         private void ShowWeatherReport()
         {
-            DisplayHeader('=', "Weather Report");
+            _header.DisplayHeader('=', "Weather Report");
 
             foreach (var weatherData in WeatherDatas)
             {
                 _weatherReport.DisplayReport(weatherData);
             }
 
-            DisplayFooter('-');
+            _footer.DisplayFooter('-');
         }
 
         private void ShowWeatherConversion()
         {
             float fahrenheit = 65;
 
-            DisplayHeader('*', "Weather Conversions");
+            _header.DisplayHeader('*', "Weather Conversions");
 
             var celsius = _weatherUtilities.FahrenheitToCelsius(fahrenheit);
             WriteLine($"{fahrenheit}°F equals {celsius}°C");
@@ -70,7 +63,7 @@ namespace Try.WeatherUtility
             fahrenheit = _weatherUtilities.CelsiusToFahrenheit(celsius);
             WriteLine($"{celsius}°C equals {fahrenheit}°F");
 
-            DisplayFooter('-');
+            _footer.DisplayFooter('-');
         }
 
         private static IList<WeatherData> GetWeatherData()
