@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using WeatherUtility;
+using WeatherUtility.Core.Interfaces;
 
 using static System.Console;
 

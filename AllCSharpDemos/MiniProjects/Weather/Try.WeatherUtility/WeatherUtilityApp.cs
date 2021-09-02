@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using WeatherUtility;
+using WeatherUtility.Core.Entities;
+using WeatherUtility.Core.Interfaces;
 
 using static System.Console;
 

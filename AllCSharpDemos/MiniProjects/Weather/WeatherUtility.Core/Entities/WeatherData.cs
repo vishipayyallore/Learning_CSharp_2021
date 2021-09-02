@@ -1,4 +1,4 @@
-﻿namespace WeatherUtility
+﻿namespace WeatherUtility.Core.Entities
 {
 
     public class WeatherData

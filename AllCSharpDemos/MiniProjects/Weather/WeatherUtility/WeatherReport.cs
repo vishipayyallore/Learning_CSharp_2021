@@ -1,4 +1,6 @@
 ﻿using System;
+using WeatherUtility.Core.Entities;
+using WeatherUtility.Core.Interfaces;
 
 using static System.Console;
 

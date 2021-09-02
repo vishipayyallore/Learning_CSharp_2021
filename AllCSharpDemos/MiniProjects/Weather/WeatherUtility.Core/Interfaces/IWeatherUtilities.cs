@@ -1,4 +1,4 @@
-﻿namespace WeatherUtility
+﻿namespace WeatherUtility.Core.Interfaces
 {
 
     public interface IWeatherUtilities
