@@ -19,6 +19,8 @@ namespace Try.WeatherUtility
         // Prefilling with Dummy data
         private IList<WeatherData> WeatherDatas { get; set; } = GetWeatherData();
 
+        // TODO: Need two methods. One for Weather Conversion and One for Weather Report.
+
         public WeatherUtilityApp(IWeatherUtilities weatherUtilities, IWeatherReport weatherReport,
             IHeader header, IFooter footer)
         {
@@ -39,18 +41,6 @@ namespace Try.WeatherUtility
             ShowWeatherReport();
         }
 
-        private void ShowWeatherReport()
-        {
-            _header.DisplayHeader('=', "Weather Report");
-
-            foreach (var weatherData in WeatherDatas)
-            {
-                _weatherReport.DisplayReport(weatherData);
-            }
-
-            _footer.DisplayFooter('-');
-        }
-
         private void ShowWeatherConversion()
         {
             float fahrenheit = 65;
@@ -66,16 +56,26 @@ namespace Try.WeatherUtility
             _footer.DisplayFooter('-');
         }
 
-        private static IList<WeatherData> GetWeatherData()
+        private void ShowWeatherReport()
         {
-            return new List<WeatherData>
+            _header.DisplayHeader('=', "Weather Report");
+
+            foreach (var weatherData in WeatherDatas)
+            {
+                _weatherReport.DisplayReport(weatherData);
+            }
+
+            _footer.DisplayFooter('-');
+        }
+
+        // TODO: Get this data from SQLite
+        private static IList<WeatherData> GetWeatherData() => new List<WeatherData>
             {
                 new WeatherData { Location="San Francisco", TemperatureCelsius = 19, Humidity = 73 },
                 new WeatherData { Location = "Denver", TemperatureCelsius = 21, Humidity = 55},
                 new WeatherData { Location = "Bologna", TemperatureCelsius = 23, Humidity= 65 },
                 new WeatherData { Location = "Hyderabad", TemperatureCelsius = 35, Humidity= 65 }
             };
-        }
 
     }
 
